@@ -20,8 +20,7 @@ module.exports = {
       '.js',
       '.jsx',
     ],
-    'import/core-modules': [
-    ],
+    'import/core-modules': [],
     'import/ignore': [
       'node_modules',
       '\\.(coffee|scss|css|less|hbs|svg|json)$',
@@ -33,7 +32,10 @@ module.exports = {
 
     // ensure imports point to files/modules that can be resolved
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
-    'import/no-unresolved': ['error', { commonjs: true, caseSensitive: true }],
+    'import/no-unresolved': ['error', {
+      commonjs: true,
+      caseSensitive: true
+    }],
 
     // ensure named imports coupled with named exports
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/named.md#when-not-to-use-it
@@ -67,6 +69,25 @@ module.exports = {
     // Forbid the use of extraneous packages
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
     // paths are treated both as absolute paths, and relative to process.cwd()
+    // Modified by nimedev
+    // 'import/no-extraneous-dependencies': ['error', {
+    //   devDependencies: [
+    //     'test/**', // tape, common npm pattern
+    //     'tests/**', // also common npm pattern
+    //     'spec/**', // mocha, rspec-like pattern
+    //     '**/__tests__/**', // jest pattern
+    //     'test.js', // repos with a single test file
+    //     'test-*.js', // repos with multiple top-level test files
+    //     '**/*.test.js', // tests where the extension denotes that it is a test
+    //     '**/webpack.config.js', // webpack config
+    //     '**/webpack.config.*.js', // webpack config
+    //     '**/rollup.config.js', // rollup config
+    //     '**/gulpfile.js', // gulp config
+    //     '**/gulpfile.*.js', // gulp config
+    //     '**/Gruntfile', // grunt config
+    //   ],
+    //   optionalDependencies: false,
+    // }],
     'import/no-extraneous-dependencies': ['error', {
       devDependencies: [
         'test/**', // tape, common npm pattern
@@ -75,13 +96,15 @@ module.exports = {
         '**/__tests__/**', // jest pattern
         'test.js', // repos with a single test file
         'test-*.js', // repos with multiple top-level test files
+        '**/*.spec.js', // tests where the extension denotes that it is a spec
         '**/*.test.js', // tests where the extension denotes that it is a test
         '**/webpack.config.js', // webpack config
         '**/webpack.config.*.js', // webpack config
+        '**/webpack.parts/**', // webpack config
         '**/rollup.config.js', // rollup config
         '**/gulpfile.js', // gulp config
         '**/gulpfile.*.js', // gulp config
-        '**/Gruntfile', // grunt config
+        '**/Gruntfile' // grunt config
       ],
       optionalDependencies: false,
     }],
@@ -154,7 +177,9 @@ module.exports = {
 
     // Forbid modules to have too many dependencies
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/max-dependencies.md
-    'import/max-dependencies': ['off', { max: 10 }],
+    'import/max-dependencies': ['off', {
+      max: 10
+    }],
 
     // Forbid import of modules using absolute paths
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-absolute-path.md
@@ -190,4 +215,4 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-default.md
     'import/no-named-default': 'error',
   },
-};
+}

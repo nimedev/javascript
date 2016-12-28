@@ -1,21 +1,15 @@
 {
-  "name": "airbnb-style",
-  "version": "2.0.0",
-  "description": "A mostly reasonable approach to JavaScript.",
+  "name": "nimedev-js-style",
+  "version": "1.0.0",
+  "description": "Airbnb JavaScript style guide adapted to nimedev style.",
   "scripts": {
-    "preinstall": "npm run install:config && npm run install:config:base",
-    "install:config": "cd packages/eslint-config-airbnb && npm prune && npm install",
-    "install:config:base": "cd packages/eslint-config-airbnb-base && npm prune && npm install",
-    "test": "npm run --silent test:config && npm run --silent test:config:base",
-    "test:config": "cd packages/eslint-config-airbnb; npm test",
-    "test:config:base": "cd packages/eslint-config-airbnb-base; npm test",
-    "travis": "npm run --silent travis:config && npm run --silent travis:config:base",
-    "travis:config": "cd packages/eslint-config-airbnb; npm run travis",
-    "travis:config:base": "cd packages/eslint-config-airbnb-base; npm run travis"
+    "preinstall": "npm run install:config:base && npm run install:config:react",
+    "install:config:base": "cd packages/eslint-config-nimedev-base && npm prune && npm install",
+    "install:config:react": "cd packages/eslint-config-nimedev-react && npm prune && npm install"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/airbnb/javascript.git"
+    "url": "https://github.com/nimedev/javascript.git"
   },
   "keywords": [
     "style guide",
@@ -26,10 +20,10 @@
     "react",
     "jsx"
   ],
-  "author": "Harrison Shoff <hi@hshoff.com> (https://twitter.com/hshoff)",
+  "author": "Nicolás Mejía Correa <nicolasmejiaco@gmail.com> (https://twitter.com/nimedev)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/airbnb/javascript/issues"
+    "url": "https://github.com/nimedev/javascript/issues"
   },
-  "homepage": "https://github.com/airbnb/javascript"
+  "homepage": "https://github.com/nimedev/javascript"
 }

@@ -26,10 +26,14 @@ module.exports = {
     curly: ['error', 'multi-line'],
 
     // require default case in switch statements
-    'default-case': ['error', { commentPattern: '^no default$' }],
+    'default-case': ['error', {
+      commentPattern: '^no default$'
+    }],
 
     // encourages use of dot notation whenever possible
-    'dot-notation': ['error', { allowKeywords: true }],
+    'dot-notation': ['error', {
+      allowKeywords: true
+    }],
 
     // enforces consistent newlines before or after dots
     // http://eslint.org/docs/rules/dot-location
@@ -97,7 +101,9 @@ module.exports = {
 
     // disallow reassignments of native objects or read-only globals
     // http://eslint.org/docs/rules/no-global-assign
-    'no-global-assign': ['error', { exceptions: [] }],
+    'no-global-assign': ['error', {
+      exceptions: []
+    }],
     // deprecated in favor of no-global-assign
     'no-native-reassign': 'off',
 
@@ -124,7 +130,10 @@ module.exports = {
     'no-iterator': 'error',
 
     // disallow use of labels for anything other then loops and switches
-    'no-labels': ['error', { allowLoop: false, allowSwitch: false }],
+    'no-labels': ['error', {
+      allowLoop: false,
+      allowSwitch: false
+    }],
 
     // disallow unnecessary nested blocks
     'no-lone-blocks': 'error',
@@ -166,7 +175,11 @@ module.exports = {
     // disallow reassignment of function parameters
     // disallow parameter object manipulation
     // rule: http://eslint.org/docs/rules/no-param-reassign.html
-    'no-param-reassign': ['error', { props: true }],
+    // Modified by nimedev
+    // 'no-param-reassign': ['error', { props: true }],
+    'no-param-reassign': ['error', {
+      props: false
+    }],
 
     // disallow usage of __proto__ property
     'no-proto': 'error',
@@ -219,8 +232,13 @@ module.exports = {
     'no-unmodified-loop-condition': 'off',
 
     // disallow usage of expressions in statement position
+    // Modified by nimedev
+    // 'no-unused-expressions': ['error', {
+    //   allowShortCircuit: false,
+    //   allowTernary: false,
+    // }],
     'no-unused-expressions': ['error', {
-      allowShortCircuit: false,
+      allowShortCircuit: true,
       allowTernary: false,
     }],
 
@@ -248,7 +266,10 @@ module.exports = {
     'no-void': 'error',
 
     // disallow usage of configurable warning terms in comments: e.g. todo
-    'no-warning-comments': ['off', { terms: ['todo', 'fixme', 'xxx'], location: 'start' }],
+    'no-warning-comments': ['off', {
+      terms: ['todo', 'fixme', 'xxx'],
+      location: 'start'
+    }],
 
     // disallow use of the with statement
     'no-with': 'error',
@@ -265,9 +286,11 @@ module.exports = {
 
     // require immediate function invocation to be wrapped in parentheses
     // http://eslint.org/docs/rules/wrap-iife.html
-    'wrap-iife': ['error', 'outside', { functionPrototypeMethods: false }],
+    'wrap-iife': ['error', 'outside', {
+      functionPrototypeMethods: false
+    }],
 
     // require or disallow Yoda conditions
     yoda: 'error'
   }
-};
+}

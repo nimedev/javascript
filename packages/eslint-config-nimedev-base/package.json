@@ -1,0 +1,38 @@
+{
+  "name": "eslint-config-nimedev-base",
+  "version": "1.0.0",
+  "description": "nimedev base JS ESLint config, based on Airbnb's styleguide",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nimedev/javascript"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "airbnb",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "Nicolás Mejía Correa <nicolasmejiaco@gmail.com> (https://twitter.com/nimedev)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nimedev/javascript/issues"
+  },
+  "homepage": "https://github.com/nimedev/javascript",
+  "engines": {
+    "node": ">= 6"
+  },
+  "devDependencies": {
+    "eslint": "3.12.2",
+    "eslint-plugin-import": "2.2.0"
+  },
+  "peerDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}
