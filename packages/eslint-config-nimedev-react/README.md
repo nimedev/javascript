@@ -1,56 +1,42 @@
-# eslint-config-airbnb
+# eslint-config-nimedev-react
+[![npm][npm-image]][npm-url]
 
-[![npm version](https://badge.fury.io/js/eslint-config-airbnb.svg)](http://badge.fury.io/js/eslint-config-airbnb)
+[npm-image]: https://img.shields.io/npm/v/eslint-config-nimedev-react.svg
+[npm-url]: https://npmjs.org/package/eslint-config-nimedev-react
 
-This package provides Airbnb's .eslintrc as an extensible shared config.
+> An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) for [React](https://facebook.github.io/react/) applications.
+
+## Installation
+
+It requires `babel-eslint`, `eslint`, `eslint-plugin-import`, `eslint-plugin-react`, and `eslint-plugin-jsx-a11y`.
+
+```sh
+$ npm install eslint-config-nimedev-react babel-eslint eslint eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y
+```
 
 ## Usage
 
-We export three ESLint configurations for your usage.
+Set your eslint config to:
 
-### eslint-config-airbnb
+```json
+{
+  "extends": "nimedev-react"
+}
+```
 
-Our default export contains all of our ESLint rules, including ECMAScript 6+ and React. It requires `eslint`, `eslint-plugin-import`, `eslint-plugin-react`, and `eslint-plugin-jsx-a11y`.
+### Extending the config
 
-1. Install the correct versions of each package, which are listed by the command:
+Simply add a `"rules"` key to your config and add your overrides there.
 
-  ```sh
-  npm info "eslint-config-airbnb@latest" peerDependencies
-  ```
+For example, to change the `indentation` to tabs and turn off the `no-console` rule:
 
-  Linux/OSX users can simply run
 
-  ```sh
-  (
-    export PKG=eslint-config-airbnb;
-    npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
-  )
-  ```
-
-  Which produces and runs a command like:
-
-  ```sh
-  npm install --save-dev eslint-config-airbnb eslint@^#.#.# eslint-plugin-jsx-a11y@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-react@^#.#.#
-  ```
-
-2. Add `"extends": "airbnb"` to your .eslintrc
-
-### eslint-config-airbnb/base
-
-This entry point is deprecated. See [eslint-config-airbnb-base](https://npmjs.com/eslint-config-airbnb-base).
-
-### eslint-config-airbnb/legacy
-
-This entry point is deprecated. See [eslint-config-airbnb-base](https://npmjs.com/eslint-config-airbnb-base).
-
-See [Airbnb's Javascript styleguide](https://github.com/airbnb/javascript) and
-the [ESlint config docs](http://eslint.org/docs/user-guide/configuring#extending-configuration-files)
-for more information.
-
-## Improving this config
-
-Consider adding test cases if you're making complicated rules changes, like anything involving regexes. Perhaps in a distant future, we could use literate programming to structure our README as test cases for our .eslintrc?
-
-You can run tests with `npm test`.
-
-You can make sure this module lints with itself using `npm run lint`.
+```json
+{
+  "extends": "nimedev-react",
+  "rules": {
+    "indentation": "tab",
+    "no-console": 0
+  }
+}
+```

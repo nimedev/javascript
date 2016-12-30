@@ -8,7 +8,7 @@
 
 ## Installation
 
-It requires eslint and eslint-plugin-import
+It requires `eslint` and `eslint-plugin-import`
 
 ```sh
 $ npm install eslint-config-nimedev-base eslint eslint-plugin-import
