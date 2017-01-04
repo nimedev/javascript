@@ -37,7 +37,7 @@ module.exports = {
     // Prevent missing displayName in a React component definition
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/display-name.md
     'react/display-name': ['off', {
-      ignoreTranspilerName: false
+      ignoreTranspilerName: false,
     }],
 
     // Forbid certain propTypes (any, array, object)
@@ -60,7 +60,7 @@ module.exports = {
     // Enforce or disallow spaces inside of curly braces in JSX attributes
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md
     'react/jsx-curly-spacing': ['error', 'never', {
-      allowMultiline: true
+      allowMultiline: true,
     }],
 
     // Require that the first prop in a JSX element be on a new line when the element is multiline
@@ -102,7 +102,7 @@ module.exports = {
     // Prevent duplicate props in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-duplicate-props.md
     'react/jsx-no-duplicate-props': ['error', {
-      ignoreCase: true
+      ignoreCase: true,
     }],
 
     // Prevent usage of unwrapped JSX strings
@@ -175,7 +175,7 @@ module.exports = {
     // Prevent multiple component definition per file
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md
     'react/no-multi-comp': ['error', {
-      ignoreStateless: true
+      ignoreStateless: true,
     }],
 
     // Prevent usage of setState
@@ -202,7 +202,7 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
     'react/prop-types': ['error', {
       ignore: [],
-      customValidators: []
+      customValidators: [],
     }],
 
     // Prevent missing React when using JSX
@@ -213,7 +213,7 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-extension.md
     // deprecated in favor of import/extensions
     'react/require-extension': ['off', {
-      extensions: ['.jsx', '.js']
+      extensions: ['.jsx', '.js'],
     }],
 
     // Require render() methods to return something
@@ -238,7 +238,7 @@ module.exports = {
         '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
         'everything-else',
         '/^render.+$/',
-        'render'
+        'render',
       ],
     }],
 
@@ -247,7 +247,7 @@ module.exports = {
     'react/jsx-wrap-multilines': ['error', {
       declaration: true,
       assignment: true,
-      return: true
+      return: true,
     }],
     'react/wrap-multilines': 'off', // deprecated version
 
@@ -266,7 +266,7 @@ module.exports = {
     // only .jsx files may have JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
     'react/jsx-filename-extension': ['error', {
-      extensions: ['.jsx']
+      extensions: ['.jsx'],
     }],
 
     // prevent accidental JS comments from being injected into JSX as text
@@ -281,7 +281,7 @@ module.exports = {
     // require a shouldComponentUpdate method, or PureRenderMixin
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-optimization.md
     'react/require-optimization': ['off', {
-      allowDecorators: []
+      allowDecorators: [],
     }],
 
     // warn against using findDOMNode()
@@ -291,7 +291,7 @@ module.exports = {
     // Forbid certain props on Components
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-component-props.md
     'react/forbid-component-props': ['off', {
-      forbid: []
+      forbid: [],
     }],
 
     // Prevent problem with children and props.dangerouslySetInnerHTML
@@ -323,7 +323,7 @@ module.exports = {
     'react/jsx-tag-spacing': ['error', {
       closingSlash: 'never',
       beforeSelfClosing: 'always',
-      afterOpening: 'never'
+      afterOpening: 'never',
     }],
 
     // Prevent usage of Array index in keys
@@ -338,12 +338,12 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.json']
-      }
+        extensions: ['.js', '.jsx', '.json'],
+      },
     },
     react: {
       pragma: 'React',
-      version: '0.14'
+      version: '0.14',
     },
-  }
+  },
 }
