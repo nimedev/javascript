@@ -1,20 +1,20 @@
 module.exports = {
   env: {
-    es6: true
+    es6: true,
   },
   parserOptions: {
     ecmaVersion: 6,
-    sourceType: 'module'
+    sourceType: 'module',
   },
   plugins: [
-    'import'
+    'import',
   ],
 
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.json']
-      }
+        extensions: ['.js', '.json'],
+      },
     },
     'import/extensions': [
       '.js',
@@ -34,7 +34,7 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
     'import/no-unresolved': ['error', {
       commonjs: true,
-      caseSensitive: true
+      caseSensitive: true,
     }],
 
     // ensure named imports coupled with named exports
@@ -104,7 +104,7 @@ module.exports = {
         '**/rollup.config.js', // rollup config
         '**/gulpfile.js', // gulp config
         '**/gulpfile.*.js', // gulp config
-        '**/Gruntfile' // grunt config
+        '**/Gruntfile', // grunt config
       ],
       optionalDependencies: false,
     }],
@@ -178,7 +178,7 @@ module.exports = {
     // Forbid modules to have too many dependencies
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/max-dependencies.md
     'import/max-dependencies': ['off', {
-      max: 10
+      max: 10,
     }],
 
     // Forbid import of modules using absolute paths

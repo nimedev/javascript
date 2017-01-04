@@ -27,12 +27,12 @@ module.exports = {
 
     // require default case in switch statements
     'default-case': ['error', {
-      commentPattern: '^no default$'
+      commentPattern: '^no default$',
     }],
 
     // encourages use of dot notation whenever possible
     'dot-notation': ['error', {
-      allowKeywords: true
+      allowKeywords: true,
     }],
 
     // enforces consistent newlines before or after dots
@@ -70,7 +70,7 @@ module.exports = {
         'arrowFunctions',
         'functions',
         'methods',
-      ]
+      ],
     }],
 
     // disallow empty destructuring patterns
@@ -102,7 +102,7 @@ module.exports = {
     // disallow reassignments of native objects or read-only globals
     // http://eslint.org/docs/rules/no-global-assign
     'no-global-assign': ['error', {
-      exceptions: []
+      exceptions: [],
     }],
     // deprecated in favor of no-global-assign
     'no-native-reassign': 'off',
@@ -132,7 +132,7 @@ module.exports = {
     // disallow use of labels for anything other then loops and switches
     'no-labels': ['error', {
       allowLoop: false,
-      allowSwitch: false
+      allowSwitch: false,
     }],
 
     // disallow unnecessary nested blocks
@@ -178,7 +178,7 @@ module.exports = {
     // Modified by nimedev
     // 'no-param-reassign': ['error', { props: true }],
     'no-param-reassign': ['error', {
-      props: false
+      props: false,
     }],
 
     // disallow usage of __proto__ property
@@ -268,7 +268,7 @@ module.exports = {
     // disallow usage of configurable warning terms in comments: e.g. todo
     'no-warning-comments': ['off', {
       terms: ['todo', 'fixme', 'xxx'],
-      location: 'start'
+      location: 'start',
     }],
 
     // disallow use of the with statement
@@ -287,10 +287,10 @@ module.exports = {
     // require immediate function invocation to be wrapped in parentheses
     // http://eslint.org/docs/rules/wrap-iife.html
     'wrap-iife': ['error', 'outside', {
-      functionPrototypeMethods: false
+      functionPrototypeMethods: false,
     }],
 
     // require or disallow Yoda conditions
-    yoda: 'error'
-  }
+    yoda: 'error',
+  },
 }
