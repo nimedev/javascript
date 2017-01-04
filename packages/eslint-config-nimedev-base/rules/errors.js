@@ -23,7 +23,7 @@ module.exports = {
     // Modified by nimedev
     // 'no-console': 'warn',
     'no-console': ['error', {
-      allow: ['error'],
+      allow: ['error']
     }],
 
     // disallow use of constant expressions in conditions
@@ -62,7 +62,7 @@ module.exports = {
     'no-extra-parens': ['off', 'all', {
       conditionalAssign: true,
       nestedBinaryExpressions: false,
-      returnAssign: false,
+      returnAssign: false
     }],
 
     // disallow unnecessary semicolons
@@ -125,7 +125,7 @@ module.exports = {
     // ensure that the results of typeof are compared against a valid string
     // http://eslint.org/docs/rules/valid-typeof
     'valid-typeof': ['error', {
-      requireStringLiterals: true,
-    }],
-  },
+      requireStringLiterals: true
+    }]
+  }
 }

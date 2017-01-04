@@ -1,5 +1,11 @@
 # Change Log
 
+## [2.0.0] - 2017-01-04
+
+### Modified
+- Change comma-dangle rule to generate error in all cases.
+
+
 ## [1.1.0] - 2017-01-03
 
 ### Added
