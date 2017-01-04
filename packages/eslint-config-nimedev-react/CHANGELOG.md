@@ -1,5 +1,11 @@
 # Change Log
 
+## [2.0.0] - 2017-01-04
+
+### Updated
+- Upgrade eslint-config-nimedev-base rules to v2.0.0.
+
+
 ## [1.1.0] - 2017-01-04
 
 ### Updated

@@ -3,11 +3,11 @@ module.exports = {
     'eslint-config-nimedev-base',
     './rules/react',
     './rules/react-a11y',
-    './rules/strict',
+    './rules/strict'
   ].map(require.resolve),
   env: {
-    browser: true,
+    browser: true
   },
   parser: 'babel-eslint',
-  rules: {},
+  rules: {}
 }
