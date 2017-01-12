@@ -1,5 +1,11 @@
 # Change Log
 
+## [2.1.0] - 2017-01-11
+
+### Modified
+- Updated self-closing-comp rule to avoid errors with html elements.
+
+
 ## [2.0.0] - 2017-01-04
 
 ### Updated

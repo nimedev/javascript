@@ -222,7 +222,12 @@ module.exports = {
 
     // Prevent extra closing tags for components without children
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md
-    'react/self-closing-comp': 'error',
+    // Modified by nimedev
+    // 'react/self-closing-comp': 'error',
+    'react/self-closing-comp': ['error', {
+      component: true,
+      html: false
+    }],
 
     // Enforce spaces before the closing bracket of self-closing JSX elements
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-space-before-closing.md
