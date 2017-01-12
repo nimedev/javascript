@@ -1,5 +1,14 @@
 # Change Log
 
+## [2.1.0] - 2017-01-12
+
+### Modified
+- Change no-restricted-syntax to remove restrictions in for in and for of loops.
+
+### Updated
+- Upgrade eslint.
+
+
 ## [2.0.0] - 2017-01-04
 
 ### Modified
