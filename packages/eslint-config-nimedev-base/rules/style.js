@@ -281,6 +281,7 @@ module.exports = {
 
     // disallow certain syntax forms
     // http://eslint.org/docs/rules/no-restricted-syntax
+    // Modified by nimedev
     'no-restricted-syntax': [
       'error',
       'ForInStatement',
