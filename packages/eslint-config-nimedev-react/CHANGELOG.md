@@ -1,5 +1,14 @@
 # Change Log
 
+## [2.2.0] - 2017-01-12
+
+### Modified
+- Override no-restricted-syntax rule to restrict for of loops in react apps.
+
+### Updated
+- Upgrade eslint and eslint-config-nimedev-base.
+
+
 ## [2.1.0] - 2017-01-11
 
 ### Modified

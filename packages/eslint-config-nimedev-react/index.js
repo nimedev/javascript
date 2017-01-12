@@ -9,5 +9,15 @@ module.exports = {
     browser: true
   },
   parser: 'babel-eslint',
-  rules: {}
+  rules: {
+    // disallow certain syntax forms
+    // http://eslint.org/docs/rules/no-restricted-syntax
+    // Added by nimedev to restrict use of for of in browsers
+    'no-restricted-syntax': [
+      'error',
+      'ForOfStatement',
+      'LabeledStatement',
+      'WithStatement'
+    ]
+  }
 }
