@@ -1,5 +1,11 @@
 # Change Log
 
+## [2.2.0] - 2017-01-12
+
+### Modified
+- Restrict the use of `for of` loops.
+
+
 ## [2.1.0] - 2017-01-12
 
 ### Modified
