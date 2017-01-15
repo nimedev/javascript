@@ -1,5 +1,11 @@
 # Change Log
 
+## [2.3.0] - 2017-01-15
+
+### Modified
+- Disable `no-underscore-dangle` rule.
+
+
 ## [2.2.0] - 2017-01-12
 
 ### Modified
