@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-nimedev-base",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "nimedev base JS ESLint config, based on Airbnb's styleguide",
   "main": "index.js",
   "scripts": {

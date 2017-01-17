@@ -20,11 +20,7 @@ module.exports = {
     'no-cond-assign': ['error', 'always'],
 
     // disallow use of console
-    // Modified by nimedev
-    // 'no-console': 'warn',
-    'no-console': ['error', {
-      allow: ['error']
-    }],
+    'no-console': 'warn',
 
     // disallow use of constant expressions in conditions
     'no-constant-condition': 'warn',

@@ -1,5 +1,11 @@
 # Change Log
 
+## [2.4.0] - 2017-01-16
+
+### Modified
+- Change `no-console` rule to warn all.
+
+
 ## [2.3.0] - 2017-01-15
 
 ### Modified
