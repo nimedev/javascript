@@ -29,7 +29,7 @@
     "node": ">= 6"
   },
   "dependencies": {
-    "eslint-config-nimedev-base": "2.4.0"
+    "eslint-config-nimedev-base": "2.4.1"
   },
   "devDependencies": {
     "eslint": "3.13.1",
