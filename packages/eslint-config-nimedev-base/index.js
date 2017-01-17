@@ -1,5 +1,3 @@
-console.log('hola')
-
 module.exports = {
   extends: [
     './rules/best-practices',

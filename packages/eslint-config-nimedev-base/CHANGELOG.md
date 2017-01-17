@@ -1,5 +1,11 @@
 # Change Log
 
+## [2.4.1] - 2017-01-16
+
+### Fixed
+- Remove a console.log in index file.
+
+
 ## [2.4.0] - 2017-01-16
 
 ### Modified
