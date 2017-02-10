@@ -1,5 +1,15 @@
 # Change Log
 
+## [3.0.0] - 2017-02-10
+
+### Deleted
+- Remove no-marquee rule from react-a11y rules.
+
+### Updated
+- Upgrade devDep: eslint.
+- Upgrade peerDep: eslint, eslint-plugin-jsx-a11y and eslint-plugin-react
+
+
 ## [2.5.0] - 2017-01-16
 
 ### Updated
