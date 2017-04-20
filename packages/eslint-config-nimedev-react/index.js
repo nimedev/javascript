@@ -1,3 +1,5 @@
+'use strict'
+
 module.exports = {
   extends: [
     'eslint-config-nimedev-base',
@@ -9,5 +11,8 @@ module.exports = {
     browser: true
   },
   parser: 'babel-eslint',
+  parserOptions: {
+    sourceType: 'module'
+  },
   rules: {}
 }

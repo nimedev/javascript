@@ -261,9 +261,9 @@ escope@^3.6.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-config-nimedev-base@2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-nimedev-base/-/eslint-config-nimedev-base-2.4.1.tgz#1af9466863431ac5b392618de65a3f7254ceca06"
+eslint-config-nimedev-base@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-nimedev-base/-/eslint-config-nimedev-base-3.0.0.tgz#d81c9abde2a73382d3dbde4613a6928e62e2e093"
 
 eslint-import-resolver-node@^0.2.0:
   version "0.2.3"

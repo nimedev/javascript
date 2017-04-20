@@ -1,3 +1,5 @@
+'use strict'
+
 module.exports = {
   rules: {
     // babel inserts `'use strict';` for us
