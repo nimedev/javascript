@@ -1,3 +1,5 @@
+'use strict'
+
 module.exports = {
   extends: [
     './rules/best-practices',
@@ -11,7 +13,7 @@ module.exports = {
   ].map(require.resolve),
   parserOptions: {
     ecmaVersion: 2017,
-    sourceType: 'module',
+    sourceType: 'script',
     ecmaFeatures: {
       experimentalObjectRestSpread: true
     }

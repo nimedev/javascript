@@ -1,5 +1,11 @@
 # Change Log
 
+## [3.0.0] - 2017-04-20
+
+### Modified
+- Breaking: Use sourceType = "script" to force strict mode.
+
+
 ## [2.4.1] - 2017-01-16
 
 ### Fixed
