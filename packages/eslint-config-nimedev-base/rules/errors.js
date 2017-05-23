@@ -3,14 +3,13 @@
 module.exports = {
   rules: {
     // require trailing commas in multiline object literals
-    // Modified by nimedev
-    // 'comma-dangle': ['error', {
-    //   arrays: 'always-multiline',
-    //   objects: 'always-multiline',
-    //   imports: 'always-multiline',
-    //   exports: 'always-multiline',
-    //   functions: 'always-multiline',
-    // }],
+    'comma-dangle': ['error', {
+      arrays: 'always-multiline',
+      objects: 'always-multiline',
+      imports: 'always-multiline',
+      exports: 'always-multiline',
+      functions: 'always-multiline',
+    }],
 
     // Disallow await inside of loops
     // http://eslint.org/docs/rules/no-await-in-loop
@@ -60,7 +59,7 @@ module.exports = {
     'no-extra-parens': ['off', 'all', {
       conditionalAssign: true,
       nestedBinaryExpressions: false,
-      returnAssign: false
+      returnAssign: false,
     }],
 
     // disallow unnecessary semicolons
@@ -123,7 +122,7 @@ module.exports = {
     // ensure that the results of typeof are compared against a valid string
     // http://eslint.org/docs/rules/valid-typeof
     'valid-typeof': ['error', {
-      requireStringLiterals: true
-    }]
-  }
+      requireStringLiterals: true,
+    }],
+  },
 }

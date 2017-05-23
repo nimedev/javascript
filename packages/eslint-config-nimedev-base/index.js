@@ -9,13 +9,13 @@ module.exports = {
     './rules/strict',
     './rules/style',
     './rules/variables',
-    './rules/imports'
+    './rules/imports',
   ].map(require.resolve),
   parserOptions: {
     ecmaVersion: 2017,
     sourceType: 'script',
     ecmaFeatures: {
-      experimentalObjectRestSpread: true
-    }
-  }
+      experimentalObjectRestSpread: true,
+    },
+  },
 }

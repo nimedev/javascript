@@ -18,7 +18,7 @@ module.exports = {
     // enforce that class methods use "this"
     // http://eslint.org/docs/rules/class-methods-use-this
     'class-methods-use-this': ['error', {
-      exceptMethods: []
+      exceptMethods: [],
     }],
 
     // require return statements to either always or never specify values
@@ -29,12 +29,12 @@ module.exports = {
 
     // require default case in switch statements
     'default-case': ['error', {
-      commentPattern: '^no default$'
+      commentPattern: '^no default$',
     }],
 
     // encourages use of dot notation whenever possible
     'dot-notation': ['error', {
-      allowKeywords: true
+      allowKeywords: true,
     }],
 
     // enforces consistent newlines before or after dots
@@ -71,8 +71,8 @@ module.exports = {
       allow: [
         'arrowFunctions',
         'functions',
-        'methods'
-      ]
+        'methods',
+      ],
     }],
 
     // disallow empty destructuring patterns
@@ -104,7 +104,7 @@ module.exports = {
     // disallow reassignments of native objects or read-only globals
     // http://eslint.org/docs/rules/no-global-assign
     'no-global-assign': ['error', {
-      exceptions: []
+      exceptions: [],
     }],
     // deprecated in favor of no-global-assign
     'no-native-reassign': 'off',
@@ -115,7 +115,7 @@ module.exports = {
       boolean: false,
       number: true,
       string: true,
-      allow: []
+      allow: [],
     }],
 
     // disallow var and named functions in global scope
@@ -134,7 +134,7 @@ module.exports = {
     // disallow use of labels for anything other then loops and switches
     'no-labels': ['error', {
       allowLoop: false,
-      allowSwitch: false
+      allowSwitch: false,
     }],
 
     // disallow unnecessary nested blocks
@@ -149,7 +149,7 @@ module.exports = {
       ignore: [],
       ignoreArrayIndexes: true,
       enforceConst: true,
-      detectObjects: false
+      detectObjects: false,
     }],
 
     // disallow use of multiple spaces
@@ -180,7 +180,7 @@ module.exports = {
     // Modified by nimedev
     // 'no-param-reassign': ['error', { props: true }],
     'no-param-reassign': ['error', {
-      props: false
+      props: false,
     }],
 
     // disallow usage of __proto__ property
@@ -194,17 +194,17 @@ module.exports = {
     'no-restricted-properties': ['error', {
       object: 'arguments',
       property: 'callee',
-      message: 'arguments.callee is deprecated'
+      message: 'arguments.callee is deprecated',
     }, {
       property: '__defineGetter__',
-      message: 'Please use Object.defineProperty instead.'
+      message: 'Please use Object.defineProperty instead.',
     }, {
       property: '__defineSetter__',
-      message: 'Please use Object.defineProperty instead.'
+      message: 'Please use Object.defineProperty instead.',
     }, {
       object: 'Math',
       property: 'pow',
-      message: 'Use the exponentiation operator (**) instead.'
+      message: 'Use the exponentiation operator (**) instead.',
     }],
 
     // disallow use of assignment in return statement
@@ -241,7 +241,7 @@ module.exports = {
     // }],
     'no-unused-expressions': ['error', {
       allowShortCircuit: true,
-      allowTernary: false
+      allowTernary: false,
     }],
 
     // disallow unused labels
@@ -270,7 +270,7 @@ module.exports = {
     // disallow usage of configurable warning terms in comments: e.g. todo
     'no-warning-comments': ['off', {
       terms: ['todo', 'fixme', 'xxx'],
-      location: 'start'
+      location: 'start',
     }],
 
     // disallow use of the with statement
@@ -289,10 +289,10 @@ module.exports = {
     // require immediate function invocation to be wrapped in parentheses
     // http://eslint.org/docs/rules/wrap-iife.html
     'wrap-iife': ['error', 'outside', {
-      functionPrototypeMethods: false
+      functionPrototypeMethods: false,
     }],
 
     // require or disallow Yoda conditions
-    yoda: 'error'
-  }
+    yoda: 'error',
+  },
 }

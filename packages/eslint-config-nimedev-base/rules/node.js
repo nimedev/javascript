@@ -2,7 +2,7 @@
 
 module.exports = {
   env: {
-    node: true
+    node: true,
   },
 
   rules: {
@@ -36,6 +36,6 @@ module.exports = {
     'no-restricted-modules': 'off',
 
     // disallow use of synchronous methods (off by default)
-    'no-sync': 'off'
-  }
+    'no-sync': 'off',
+  },
 }

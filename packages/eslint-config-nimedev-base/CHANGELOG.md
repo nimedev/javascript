@@ -1,5 +1,11 @@
 # Change Log
 
+## [4.0.0] - 2017-05-23
+
+### Modified
+- Implement require trailing commas in multiline object literals.
+
+
 ## [3.0.0] - 2017-04-20
 
 ### Modified
