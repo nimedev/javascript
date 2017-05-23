@@ -1,5 +1,11 @@
 # Change Log
 
+## [4.0.1] - 2017-05-22
+
+### Updated
+- Upgrade dep: eslint-config-nimedev-base. Fix comma-dangle configuration for functions.
+
+
 ## [4.0.0] - 2017-05-22
 
 ### Updated
