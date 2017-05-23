@@ -1,5 +1,11 @@
 # Change Log
 
+## [4.0.0] - 2017-05-22
+
+### Updated
+- [Breaking change] Upgrade dep: eslint-config-nimedev-base. Implement require trailing commas in multiline object literals.
+
+
 ## [3.0.1] - 2017-04-20
 
 ### Updated
