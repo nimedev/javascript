@@ -1,5 +1,11 @@
 # Change Log
 
+## [4.0.1] - 2017-05-23
+
+### Fixed
+- Fix comma-dangle configuration for functions.
+
+
 ## [4.0.0] - 2017-05-23
 
 ### Modified
