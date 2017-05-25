@@ -1,5 +1,9 @@
 # Change Log
 
+## [4.2.0] - 2017-05-25
+- Turn off the `linebreak-style` rule.
+
+
 ## [4.1.0] - 2017-05-25
 
 ### Modified.
