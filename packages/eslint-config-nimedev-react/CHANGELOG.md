@@ -1,5 +1,11 @@
 # Change Log
 
+## [4.1.0] - 2017-05-25
+
+### Updated
+- Upgrade devDep: eslint-config-nimedev-base. Turn off the `eol-last` rule.
+
+
 ## [4.0.1] - 2017-05-22
 
 ### Updated
