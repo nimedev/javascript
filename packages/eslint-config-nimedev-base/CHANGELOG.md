@@ -1,6 +1,14 @@
 # Change Log
 
+## [5.0.0] - 2017-05-31
+
+### Modified
+- [Breaking change] remove yarn and use npm v5.0.0.
+
+
 ## [4.2.0] - 2017-05-25
+
+### Modified
 - Turn off the `linebreak-style` rule.
 
 
