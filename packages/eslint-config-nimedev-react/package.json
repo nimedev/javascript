@@ -30,7 +30,7 @@
     "node": ">= 6"
   },
   "dependencies": {
-    "eslint-config-nimedev-base": "4.2.0"
+    "eslint-config-nimedev-base": "5.0.0"
   },
   "devDependencies": {
     "eslint": "3.19.0",
