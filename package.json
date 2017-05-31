@@ -1,6 +1,6 @@
 {
   "name": "nimedev-js-style",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Airbnb JavaScript style guide adapted to nimedev style.",
   "scripts": {
     "lint": "npm run lint:base && npm run lint:react",
