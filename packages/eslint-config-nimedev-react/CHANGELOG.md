@@ -6,7 +6,8 @@
 - [Breaking change] remove yarn and use npm v5.0.0.
 
 ### Updated
-- Upgrade devDep: eslint-config-nimedev-base.
+- Upgrade dep: eslint-config-nimedev-base.
+- Upgrade devDep: eslint-plugin-import.
 
 
 ## [4.2.0] - 2017-05-25
