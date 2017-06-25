@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-nimedev-base",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "description": "nimedev base JS ESLint config, based on Airbnb's styleguide",
   "main": "index.js",
   "scripts": {
@@ -29,11 +29,11 @@
     "node": ">= 6"
   },
   "devDependencies": {
-    "eslint": "3.19.0",
-    "eslint-plugin-import": "2.2.0"
+    "eslint": "4.1.0",
+    "eslint-plugin-import": "2.6.0"
   },
   "peerDependencies": {
-    "eslint": "^3.19.0",
-    "eslint-plugin-import": "^2.2.0"
+    "eslint": "^4.1.0",
+    "eslint-plugin-import": "^2.6.0"
   }
 }

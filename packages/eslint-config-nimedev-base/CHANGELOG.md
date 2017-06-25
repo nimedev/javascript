@@ -1,5 +1,12 @@
 # Change Log
 
+## [5.1.0] - 2017-06-25
+
+### Updated
+- Upgrade to eslint 4.
+- Upgrade devDep eslint eslint-plugin-import.
+
+
 ## [5.0.0] - 2017-05-31
 
 ### Modified
