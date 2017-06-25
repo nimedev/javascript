@@ -1,6 +1,6 @@
 {
   "name": "nimedev-js-style",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Airbnb JavaScript style guide adapted to nimedev style.",
   "scripts": {
     "lint": "npm run lint:base && npm run lint:react",
@@ -10,9 +10,6 @@
     "install:config:base": "cd packages/eslint-config-nimedev-base && npm prune && npm install",
     "install:config:react": "cd packages/eslint-config-nimedev-react && npm prune && npm install"
   },
-  "pre-commit": [
-    "lint"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/nimedev/javascript.git"
@@ -31,8 +28,5 @@
   "bugs": {
     "url": "https://github.com/nimedev/javascript/issues"
   },
-  "homepage": "https://github.com/nimedev/javascript",
-  "devDependencies": {
-    "pre-commit": "1.2.2"
-  }
+  "homepage": "https://github.com/nimedev/javascript"
 }
