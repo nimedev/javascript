@@ -1,5 +1,11 @@
 # Change Log
 
+## [5.0.1] - 2017-06-26
+
+### Updated
+- Upgrade devDep: babel-eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react.
+
+
 ## [5.0.0] - 2017-05-31
 
 ### Modified

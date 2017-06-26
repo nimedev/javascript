@@ -211,13 +211,6 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
     'react/react-in-jsx-scope': 'error',
 
-    // Restrict file extensions that may be required
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-extension.md
-    // deprecated in favor of import/extensions
-    'react/require-extension': ['off', {
-      extensions: ['.jsx', '.js'],
-    }],
-
     // Require render() methods to return something
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-render-return.md
     'react/require-render-return': 'error',
@@ -230,10 +223,6 @@ module.exports = {
       component: true,
       html: false,
     }],
-
-    // Enforce spaces before the closing bracket of self-closing JSX elements
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-space-before-closing.md
-    'react/jsx-space-before-closing': ['error', 'always'],
 
     // Enforce component methods order
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md
@@ -256,7 +245,6 @@ module.exports = {
       assignment: true,
       return: true,
     }],
-    'react/wrap-multilines': 'off', // deprecated version
 
     // Enforce spacing around jsx equals signs
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-equals-spacing.md
@@ -279,7 +267,6 @@ module.exports = {
     // prevent accidental JS comments from being injected into JSX as text
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md
     'react/jsx-no-comment-textnodes': 'error',
-    'react/no-comment-textnodes': 'off', // deprecated version
 
     // disallow using React.render/ReactDOM.render's return value
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-render-return-value.md

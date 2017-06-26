@@ -9,6 +9,11 @@ module.exports = {
     jsx: true,
   },
   rules: {
+    // Enforce that all elements that require alternative text have meaningful information to relay
+    // back to the end user.
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/alt-text.md
+    'jsx-a11y/alt-text': 'error',
+
     // Enforce that anchors have content
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-has-content.md
     'jsx-a11y/anchor-has-content': ['error', {
@@ -32,25 +37,46 @@ module.exports = {
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-unsupported-elements.md
     'jsx-a11y/aria-unsupported-elements': 'error',
 
+
+    // require onClick be accompanied by onKeyUp/onKeyDown/onKeyPress
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/click-events-have-key-events.md
+    // TODO: enable?
+    'jsx-a11y/click-events-have-key-events': 'off',
+
+    // ensure <hX> tags have content and are not aria-hidden
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/heading-has-content.md
+    'jsx-a11y/heading-has-content': ['error', {
+      components: [''],
+    }],
+
     // disallow href "#"
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/href-no-hash.md
     'jsx-a11y/href-no-hash': ['error', {
       components: ['a'],
     }],
 
-    // Require <img> to have a non-empty `alt` prop, or role="presentation"
-    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/img-has-alt.md
-    'jsx-a11y/img-has-alt': 'error',
+    // require HTML elements to have a "lang" prop
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/html-has-lang.md
+    'jsx-a11y/html-has-lang': 'error',
 
     // Prevent img alt text from containing redundant words like "image", "picture", or "photo"
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/img-redundant-alt.md
     'jsx-a11y/img-redundant-alt': 'error',
+
+    // Elements with an interactive role and interaction handlers (mouse or key press) must be
+    // focusable.
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/interactive-supports-focus.md
+    'jsx-a11y/interactive-supports-focus': 'off',
 
     // require that JSX labels use "htmlFor"
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-for.md
     'jsx-a11y/label-has-for': ['error', {
       components: ['label'],
     }],
+
+    // require HTML element's lang prop to be valid
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/lang.md
+    'jsx-a11y/lang': 'error',
 
     // require that mouseover/out come with focus/blur, for keyboard-only users
     // TODO: evaluate
@@ -61,18 +87,18 @@ module.exports = {
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-access-key.md
     'jsx-a11y/no-access-key': 'error',
 
+    // Non-interactive HTML elements and non-interactive ARIA roles indicate content and containers
+    // in the user interface.
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-noninteractive-element-interactions.md
+    'jsx-a11y/no-noninteractive-element-interactions': 'off',
+
     // require onBlur instead of onChange
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-onchange.md
     'jsx-a11y/no-onchange': 'off',
 
-    // Enforce that elements with onClick handlers must be focusable.
-    // TODO: evaluate
-    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/onclick-has-focus.md
-    'jsx-a11y/onclick-has-focus': 'off',
-
-    // require things with onClick to have an aria role
-    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/onclick-has-role.md
-    'jsx-a11y/onclick-has-role': 'off',
+    // Static HTML elements do not have semantic meaning
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-static-element-interactions.md
+    'jsx-a11y/no-static-element-interactions': 'off',
 
     // Enforce that elements with ARIA roles must have all required attributes
     // for that role.
@@ -88,33 +114,8 @@ module.exports = {
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/tabindex-no-positive.md
     'jsx-a11y/tabindex-no-positive': 'error',
 
-    // ensure <hX> tags have content and are not aria-hidden
-    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/heading-has-content.md
-    'jsx-a11y/heading-has-content': ['error', {
-      components: [''],
-    }],
-
-    // require HTML elements to have a "lang" prop
-    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/html-has-lang.md
-    'jsx-a11y/html-has-lang': 'error',
-
-    // require HTML element's lang prop to be valid
-    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/lang.md
-    'jsx-a11y/lang': 'error',
-
     // only allow <th> to have the "scope" attr
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/scope.md
     'jsx-a11y/scope': 'error',
-
-    // require onClick be accompanied by onKeyUp/onKeyDown/onKeyPress
-    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/click-events-have-key-events.md
-    // TODO: enable?
-    'jsx-a11y/click-events-have-key-events': 'off',
-
-    // Enforce that DOM elements without semantic behavior not have interaction handlers
-    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-static-element-interactions.md
-    // Modified by nimedev
-    // 'jsx-a11y/no-static-element-interactions': 'error',
-    'jsx-a11y/no-static-element-interactions': 0,
   },
 }
