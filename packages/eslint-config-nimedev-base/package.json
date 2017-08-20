@@ -29,11 +29,11 @@
     "node": ">= 6"
   },
   "devDependencies": {
-    "eslint": "4.1.0",
-    "eslint-plugin-import": "2.6.0"
+    "eslint": "4.5.0",
+    "eslint-plugin-import": "2.7.0"
   },
   "peerDependencies": {
-    "eslint": "^4.1.0",
-    "eslint-plugin-import": "^2.6.0"
+    "eslint": "^4.5.0",
+    "eslint-plugin-import": "^2.7.0"
   }
 }
