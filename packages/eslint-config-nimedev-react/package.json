@@ -30,7 +30,7 @@
     "node": ">= 6"
   },
   "dependencies": {
-    "eslint-config-nimedev-base": "5.0.0"
+    "eslint-config-nimedev-base": "5.2.0"
   },
   "devDependencies": {
     "babel-eslint": "7.2.3",
