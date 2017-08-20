@@ -1,5 +1,13 @@
 # Change Log
 
+## [6.0.0] - 2017-08-20
+
+### Updated
+- Major upgrade of eslint-plugin-jsx-a11y.
+- Upgrade dep: eslint-config-nimedev-base.
+- Upgrade devDep: eslint eslint-plugin-import eslint-plugin-react.
+
+
 ## [5.0.1] - 2017-06-26
 
 ### Updated

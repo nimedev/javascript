@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-nimedev-react",
-  "version": "5.0.1",
+  "version": "6.0.0",
   "description": "nimedev JS ESLint config for react applications, based on Airbnb's styleguide",
   "main": "index.js",
   "scripts": {
