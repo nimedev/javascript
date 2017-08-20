@@ -1,5 +1,14 @@
 # Change Log
 
+## [5.2.0] - 2017-08-20
+
+### Added
+- Add exception to import rules for eslint, stylelint and postcss config files.
+
+### Updated
+- Upgrade devDep: eslint eslint-plugin-import.
+
+
 ## [5.1.0] - 2017-06-25
 
 ### Updated
