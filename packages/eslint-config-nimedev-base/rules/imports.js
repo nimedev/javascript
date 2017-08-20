@@ -107,6 +107,10 @@ module.exports = {
         '**/gulpfile.js', // gulp config
         '**/gulpfile.*.js', // gulp config
         '**/Gruntfile', // grunt config
+        '**/.eslintrc.js', // ESLint config
+        '**/stylelint.config.js', // stylelint config
+        '**/postcss.config.js', // PostCSS load config
+        '**/.postcssrc.js', // PostCSS load config
       ],
       optionalDependencies: false,
     }],
